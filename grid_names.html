@@ -1,0 +1,49 @@
+<html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">	
+<style>
+body{margin: 0;}
+html{font-family: 'Abril Fatface', cursive;}
+.wrapper{
+	display: grid;
+	grid-template-rows: repeat(2, 1fr); 
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-areas:
+		"top top top top"
+	        "mid mid . button";
+	grid-gap: 1rem
+}
+.box{
+	grid-area: "top";
+	padding: 1em;
+	background-color: purple;
+	color: white;
+}
+.midbox{
+	grid-area: "mid";
+	padding: 1em;
+	background-color: blue;
+	color: white;
+}
+.button{
+	grid-area: button;
+	padding: 1em;
+	background-color: black;
+	color: white;
+}
+</style>
+<body>
+	<h1>Literally just some buttons</h1>
+	<div class="wrapper">
+		<div class="box">1 </div>
+		<div class="box">2 </div>
+		<div class="box">3 </div>
+		<div class="box">4 </div>
+		<div class="midbox">5 </div>
+		<div class="midbox">6 </div>
+		<div class="button">7 </div>
+
+	</div>
+</body>
+</html>
